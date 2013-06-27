@@ -1,11 +1,11 @@
 CKEDITOR.plugins.add( 'justifycenterimage',
 {
-	init: function( editor )
-	{
+    init: function( editor )
+    {
         editor.addCommand( 'justifycenterimage',
-    	{
-    		exec : function( editor )
-    		{
+        {
+            exec : function( editor )
+            {
                 var type = editor.getSelection().getType();
                 var imageElement = editor.getSelection().getSelectedElement();
                 if ((type != 3) || (imageElement.getName() != 'img') ) {
@@ -17,13 +17,13 @@ CKEDITOR.plugins.add( 'justifycenterimage',
                     imageElement.move(newElement);
                     editor.insertElement(newElement);
                 }
-    		}
-    	});
+            }
+        });
         editor.ui.addButton( 'JustifyCenterImage',
         {
             label : editor.lang.justify.center,
             command: 'justifycenterimage',
             icon: this.path + 'images/justifycenterimage.png'
         } );
-	}
+    }
 } );
