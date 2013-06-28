@@ -1,3 +1,10 @@
+/**
+* Justify center images plugin for CKEditor
+* Licensed under the MIT license
+* http://github.com/mabarroso/CKEditor-JustifyCenterImage-Plugin
+* Plugin for: http://ckeditor.com/license (GPL/LGPL/MPL: http://ckeditor.com/license)
+*/
+
 CKEDITOR.plugins.add( 'justifycenterimage',
 {
     init: function( editor )
